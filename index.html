@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestSpiel - Epic Arcade Game</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>🎮 BestSpiel</h1>
+        <div id="scoreboard">
+          <div class="score-card">Score: <span id="score">0</span></div>
+          <div class="score-card">High Score: <span id="highScore">0</span></div>
+        </div>
+      </header>
+
+      <main class="game-container">
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        <div id="gameOverlay" class="overlay">
+          <h2 id="overlayTitle">BestSpiel Arcade</h2>
+          <p id="overlaySubtitle">Dodge obstacles, collect stars, and get the highest score!</p>
+          <div class="button-group">
+            <button id="startBtn" class="btn primary-btn">Start Game</button>
+            <button id="restartBtn" class="btn secondary-btn" style="display: none;">Play Again</button>
+          </div>
+          <div class="controls-hint">
+            <p><strong>Controls:</strong> Arrow Keys / WASD to move | Touch or click on-screen buttons</p>
+          </div>
+        </div>
+      </main>
+
+      <div class="mobile-controls">
+        <button id="btnUp" class="ctrl-btn">▲</button>
+        <div class="horizontal-ctrls">
+          <button id="btnLeft" class="ctrl-btn">◀</button>
+          <button id="btnDown" class="ctrl-btn">▼</button>
+          <button id="btnRight" class="ctrl-btn">▶</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
